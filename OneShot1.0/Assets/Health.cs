@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public GameObject bullet;
-    // Start is called before the first frame update
-    // Update is called once per frame
-    void Update()
+    public Transform SpawnPoint;
+    void OnCollisionEnter(Collision collison)
     {
-        
+        if (collison.gameObject.name == "bulletforhealthscript")
+        {
+           transform.position = SpawnPoint.transform.position;
+        }
     }
+      
 }
