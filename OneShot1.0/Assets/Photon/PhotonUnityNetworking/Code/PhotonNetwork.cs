@@ -1057,7 +1057,7 @@ namespace Photon.Pun
         ///
         /// In general check out the <see cref="DisconnectCause"/> from the <see cref="IConnectionCallbacks.OnDisconnected"/> callback.
         ///  </remarks>
-        public static bool ConnectUsingSettings()
+        public static bool ConnectUsingSettings(string v)
         {
             if (NetworkingClient.LoadBalancingPeer.PeerState != PeerStateValue.Disconnected)
             {
