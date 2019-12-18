@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class Health : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class Health : MonoBehaviour
     {
         if (collison.gameObject.name == "bulletforhealthscript")
         {
-           transform.position = SpawnPoint.transform.position;
+            transform.position = new Vector3(69, 2, 2);
         }
     }
       
